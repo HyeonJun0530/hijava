@@ -2,7 +2,7 @@ package hijava.practice;
 
 public class Str {
 	public static void main(String[] agrs) {
-		char c='ÇÑ';
+		char c='í•œ';
 		byte b='A';
 		System.out.println(c);
 		System.out.println((int)c);
@@ -11,7 +11,7 @@ public class Str {
 		String str = "AB";
 		System.out.println(str);
 		System.out.println("AB".getBytes().length);
-		System.out.println("ABÇÑ".getBytes().length);
+		System.out.println("ABï¿½ï¿½".getBytes().length);
 
 	}
 }
