@@ -61,18 +61,39 @@ public class Man {
 	}
 	
 	public static void main(String[] args) {
+//		Man hong = new Man("Hong");
+//		Man kim = new Man("Kim");
+//		Man kildong = hong;
+//			
+//		System.out.println(hong.hashCode());
+//		System.out.println(kim.hashCode());
+//		System.out.println(kildong.hashCode());
+//		System.out.println( System.identityHashCode(kildong) );
+		
+		
+		
 		Man hong = new Man("Hong");
-		Man john = new Man("John");
+		Man kim = new Man("Kim");
+		Man kildong = hong;
+		Man ilsoo = new Man("Kim");
+			
+		System.out.println(hong.equals(kim));
+		System.out.println(hong.equals(kildong));
+		System.out.println(ilsoo.equals(kim));
+
 		
-		hong.buyCoffee(1);
-		hong.buyDonut(2);
-		
-		john.buyCoffee(2);
-		john.buyDonut(1);
-		
-		System.out.println("hong = " + hong.getAmount());
-		System.out.println("john = " + john.getAmount());
-		System.out.println(hong);
-		System.out.println(john);
+//		Man hong = new Man("Hong");
+//		Man john = new Man("John");
+//		
+//		hong.buyCoffee(1);
+//		hong.buyDonut(2);
+//		
+//		john.buyCoffee(2);
+//		john.buyDonut(1);
+//		
+//		System.out.println("hong = " + hong.getAmount());
+//		System.out.println("john = " + john.getAmount());
+//		System.out.println(hong);
+//		System.out.println(john);
 	}
 }
